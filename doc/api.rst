@@ -8,15 +8,6 @@ This is an example on how to document the API of your own project.
 
 .. currentmodule:: pyFOCI
 
-Estimator
-=========
-
-.. autosummary::
-   :toctree: generated/
-   :template: class.rst
-
-   TemplateEstimator
-
 Transformer
 ===========
 
@@ -25,15 +16,6 @@ Transformer
    :template: class.rst
 
    TemplateTransformer
-
-Predictor
-=========
-
-.. autosummary::
-   :toctree: generated/
-   :template: class.rst
-
-    TemplateClassifier
 
 
 Utilities
