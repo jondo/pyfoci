@@ -23,6 +23,11 @@ jobs:
           environments: ${{ matrix.environment }}
           frozen: true
 
+      - name: Clear pixi cache and rebuild environment
+        run: |
+          rm -rf .pixi
+          pixi install
+
       - name: Run tests
         run: pixi run -e ${{ matrix.environment }} test
 
