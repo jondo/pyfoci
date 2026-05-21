@@ -59,6 +59,7 @@ lint = { depends-on = ["black", "ruff"]}
 [tool.pixi.feature.test.dependencies]
 pytest = "*"
 pytest-cov = "*"
+libgfortran = "*"  # For macOS Fortran runtime support
 
 [tool.pixi.feature.test.tasks]
 test = { cmd = "pytest -vsl --cov=pyFOCI --cov-report=xml pyFOCI" }
