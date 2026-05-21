@@ -7,7 +7,8 @@ This is a module to be used as a reference for building other modules
 
 import numpy as np
 from sklearn.base import BaseEstimator, TransformerMixin, _fit_context
-#from sklearn.utils.validation import check_is_fitted
+
+# from sklearn.utils.validation import check_is_fitted
 
 
 # Note that the mixin class should always be on the left of `BaseEstimator` to ensure
