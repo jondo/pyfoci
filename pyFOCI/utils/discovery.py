@@ -57,11 +57,7 @@ def all_estimators(type_filter=None):
     """
 
     def is_abstract(c):
-        if not (hasattr(c, "__abstractmethods__")):
-            return False
-        if not len(c.__abstractmethods__):
-            return False
-        return True
+        return hasattr(c, "__abstractmethods__") and len(c.__abstractmethods__)
 
     all_classes = []
     root = str(Path(__file__).parent.parent)  # pyFOCI package
